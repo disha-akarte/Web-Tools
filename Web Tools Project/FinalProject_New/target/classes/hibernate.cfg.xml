@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jobportal</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.myproject.myapp.pojo.UserAccount" />
+		<mapping class="com.myproject.myapp.pojo.Candidate" />
+		<mapping class="com.myproject.myapp.pojo.Company" />
+		<mapping class="com.myproject.myapp.pojo.Job" />
+		<mapping class="com.myproject.myapp.pojo.Skills" />
+		<mapping class="com.myproject.myapp.pojo.Education" />
+		<mapping class="com.myproject.myapp.pojo.Career" />
+		<mapping class="com.myproject.myapp.pojo.Application" />
+		<mapping class="com.myproject.myapp.pojo.Category" />
+
+
+
+	</session-factory>
+</hibernate-configuration>

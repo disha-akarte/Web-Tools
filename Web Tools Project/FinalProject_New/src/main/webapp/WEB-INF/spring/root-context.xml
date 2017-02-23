@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="companyValidator" class="com.myproject.myapp.validator.CompanyValidator"></bean>
+	<bean id="candidateValidator" class="com.myproject.myapp.validator.CandidateValidator"></bean>
+	<bean id="jobValidator" class="com.myproject.myapp.validator.JobValidator"></bean>
+	<bean id="skillValidator" class="com.myproject.myapp.validator.SkillValidator"></bean>
+	<bean id="careerValidator" class="com.myproject.myapp.validator.CareerValidator"></bean>
+	<bean id="educationValidator" class="com.myproject.myapp.validator.EducationValidator"></bean>
+	<bean id="updateCandidateValidator" class="com.myproject.myapp.validator.UpdateCandidateValidator"></bean>
+	
+	<bean id="loginDAO" class="com.myproject.myapp.dao.LoginDAO"></bean>
+	<bean id="candidateDAO" class="com.myproject.myapp.dao.CandidateDAO"></bean>
+	<bean id="applicationDAO" class="com.myproject.myapp.dao.ApplicationDAO"></bean>
+	<bean id="careerDAO" class="com.myproject.myapp.dao.CareerDAO"></bean>
+	<bean id="companyDAO" class="com.myproject.myapp.dao.CompanyDAO"></bean>
+	<bean id="educationDAO" class="com.myproject.myapp.dao.EducationDAO"></bean>
+	<bean id="jobDAO" class="com.myproject.myapp.dao.JobDAO"></bean>
+	<bean id="skillDAO" class="com.myproject.myapp.dao.SkillDAO"></bean>
+	
+</beans>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/views/tiles/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="DashboardHeader"
+			value="/WEB-INF/views/tiles/DashboardHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="DashboardFooter"
+			value="/WEB-INF/views/tiles/DashboardFooter.jsp" />
+	</definition>
+
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="Company Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/welcome.jsp" />
+	</definition>
+
+	<definition name="appliedJobs" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateJobsDisplay.jsp" />
+	</definition>
+
+	<definition name="loginCand" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateDashboard.jsp" />
+	</definition>
+
+	<definition name="addSkill" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/AddSkills.jsp" />
+	</definition>
+
+	<definition name="addCareer" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/AddCareer.jsp" />
+	</definition>
+
+	<definition name="addEducation" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/AddEducation.jsp" />
+	</definition>
+
+	<definition name="AllJobs" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/AllJobs.jsp" />
+	</definition>
+
+	<definition name="addJob" extends="base">
+		<put-attribute name="title" value="Post Job" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/AddJob.jsp" />
+	</definition>
+
+	<definition name="RecievedApplications" extends="base">
+		<put-attribute name="title" value="View Applications" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/RecievedApplications.jsp" />
+	</definition>
+
+	<definition name="abc" extends="base">
+		<put-attribute name="title" value="View Applications" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/ApplicantDetailedView.jsp" />
+	</definition>
+
+<!-- Candidate Details viewed by candidate -->
+
+	<definition name="CandidatePersonalDetails" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidatePersonalDetails.jsp" />
+	</definition>
+
+
+	<definition name="CandidateViewSkills" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateViewSkills.jsp" />
+	</definition>
+
+
+	<definition name="ViewResume" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/ViewResume.jsp" />
+	</definition>
+
+	<definition name="CandidateViewCareer" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateViewCareer.jsp" />
+	</definition>
+
+	<definition name="CandidateViewEducation" extends="base">
+		<put-attribute name="title" value="Candidate Dashboard" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateViewEducation.jsp" />
+	</definition>
+
+<!-- Candidate Details viewed by company -->
+
+	<definition name="CandidateProfileView" extends="base">
+		<put-attribute name="title" value="View Applications" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateProfileView.jsp" />
+	</definition>
+
+	<definition name="CandidateSkillView" extends="base">
+		<put-attribute name="title" value="View Applications" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateSkillView.jsp" />
+	</definition>
+
+	
+	<definition name="CandidateCareerViewCompany" extends="base">
+		<put-attribute name="title" value="View Prof Experience" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateCareerViewCompany.jsp" />
+	</definition>
+	
+	<definition name="CandidateEducationViewCompany" extends="base">
+		<put-attribute name="title" value="View Education" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/tiles/CandidateEducationViewCompany.jsp" />
+	</definition>
+	
+	
+	
+	
+
+<!-- Success View -->
+	<definition name="successCompany" extends="base">
+		<put-attribute name="title" value="Success" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/Success.jsp" />
+	</definition>
+	
+	<definition name="successCandidate" extends="base">
+		<put-attribute name="title" value="Success" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/Success.jsp" />
+	</definition>
+
+<!-- Company Welcome Page -->
+	<definition name="welcome" extends="base">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/welcome.jsp" />
+	</definition>
+
+<!-- Display all jobs -->
+	<definition name="AllJobsforCompany" extends="base">
+		<put-attribute name="title" value="View Jobs" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CompanyMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/AllJobsforCompany.jsp" />
+	</definition>
+
+
+	<definition name="alreadyApplied" extends="base">
+		<put-attribute name="title" value="Apply Job" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/alreadyApplied.jsp" />
+	</definition>
+	
+	<definition name="incompleteProfile" extends="base">
+		<put-attribute name="title" value="Apply Job" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/CandidateMenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tiles/incompleteProfile.jsp" />
+	</definition>
+</tiles-definitions>
